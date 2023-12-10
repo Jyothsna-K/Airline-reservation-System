@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerHomeController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="360.0" prefHeight="143.0" prefWidth="850.0" style="-fx-background-color: WHITE;">
+         <children>
+            <TextField fx:id="departuretext" layoutX="29.0" layoutY="37.0" prefHeight="52.0" prefWidth="245.0" promptText="Departure City">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="arrivaltext" layoutX="302.0" layoutY="37.0" prefHeight="52.0" prefWidth="245.0" promptText="Arrival City">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="continuebutton" layoutX="582.0" layoutY="37.0" mnemonicParsing="false" onAction="#continueaction" prefHeight="52.0" prefWidth="245.0" style="-fx-background-color:MEDIUMPURPLE;" text="CONTINUE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="104.0" prefHeight="59.0" prefWidth="850.0" style="-fx-background-color: lightgreen">
+         <children>
+            <Button fx:id="bookbutton" layoutX="63.0" layoutY="8.0" mnemonicParsing="false" onAction="#bookaction" prefHeight="43.0" prefWidth="176.0" style="-fx-background-color: MEDIUMPURPLE;" text="BOOK FLIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebutton" layoutX="321.0" layoutY="8.0" mnemonicParsing="false" onAction="#deleteaction" prefHeight="43.0" prefWidth="209.0" style="-fx-background-color: MEDIUMPURPLE;" text="DELETE BOOKING" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewbutton" layoutX="589.0" layoutY="8.0" mnemonicParsing="false" onAction="#viewaction" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: MEDIUMPURPLE;" text="VIEW BOOKINGS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="90.0" layoutX="235.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/planes.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="297.0" layoutY="31.0" prefHeight="43.0" prefWidth="344.0" text=" SOUTHWEST AIRLINE ">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="218.0" text="Book A Flight">
+         <font>
+            <Font name="Cambria Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="262.0" prefHeight="88.0" prefWidth="651.0" text="Search for Southwest flights and book online. See our routes and schedules, and discover more about the experience you can look forward to on board" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="245.0" layoutX="302.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/ribbon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backbutton" layoutX="36.0" layoutY="34.0" mnemonicParsing="false" onAction="#backaction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: MEDIUMPURPLE;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

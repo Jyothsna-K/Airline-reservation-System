@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PaymentController">
+   <children>
+      <TableView fx:id="selectedflight" layoutX="187.0" layoutY="279.0" prefHeight="67.0" prefWidth="453.0">
+         <columns>
+            <TableColumn fx:id="flightid" prefWidth="75.0" text="Flight ID" />
+            <TableColumn fx:id="deptairport" prefWidth="152.0" text="Departure Airport" />
+            <TableColumn fx:id="arrivalairport" prefWidth="141.0" text="Arrival Airport" />
+            <TableColumn fx:id="price" prefWidth="83.0" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="321.0" layoutY="24.0" prefHeight="43.0" prefWidth="274.0" text="OPTIRELISYS AIRLINE ">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="255.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Home.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="85.0" prefHeight="59.0" prefWidth="850.0" style="-fx-background-color: MEDIUMPURPLE;">
+         <children>
+            <Button fx:id="bookbutton" layoutX="63.0" layoutY="8.0" mnemonicParsing="false" onAction="#bookaction" prefHeight="43.0" prefWidth="176.0" style="-fx-background-color: MEDIUMPURPLE;" text="BOOK FLIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebutton" layoutX="321.0" layoutY="8.0" mnemonicParsing="false" onAction="#deleteaction" prefHeight="43.0" prefWidth="209.0" style="-fx-background-color: MEDIUMPURPLE;" text="DELETE BOOKING" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewbutton" layoutX="589.0" layoutY="8.0" mnemonicParsing="false" onAction="#viewaction" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: MEDIUMPURPLE;" text="VIEW BOOKINGS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="40.0" layoutY="172.0" text="SELECTED FLIGHT INFO">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Line endX="374.0" endY="94.5" layoutX="-3.0" layoutY="117.0" startX="45.0" startY="94.5" stroke="#ab6ea6" strokeWidth="4.0" />
+      <Label layoutX="40.0" layoutY="433.0" text="PAYMENT">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Line endX="152.0" endY="94.5" layoutX="41.0" layoutY="375.0" startX="-1.52587890625E-5" startY="94.5" stroke="#a46e9f" strokeWidth="4.0" />
+      <TextField fx:id="cardtext" layoutX="155.0" layoutY="526.0" prefHeight="43.0" prefWidth="201.0" promptText="Enter Credit Card No#" />
+      <Label layoutX="155.0" layoutY="502.0" text="CARD NO">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmpayment" layoutX="423.0" layoutY="525.0" mnemonicParsing="false" onAction="#paymentaction" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: MEDIUMPURPLE;" text="CONFIRM PAYMENT" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="156.0" layoutY="598.0" text="Note: To Print Your Boarding Pass Go To View Bookings Section">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="68.0" layoutX="555.0" layoutY="621.0" startX="-53.0" stroke="#542561" />
+      <Button fx:id="backbutton" layoutX="52.0" layoutY="27.0" mnemonicParsing="false" onAction="#backaction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: MEDIUMPURPLE;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewschedbutton" layoutX="391.0" layoutY="169.0" mnemonicParsing="false" onAction="#viewschedaction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: MEDIUMPURPLE;" text="VIEW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

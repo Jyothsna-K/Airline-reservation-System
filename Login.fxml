@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color:linear-gradient(to right, pink, lightblue);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="usernametext" layoutX="478.0" layoutY="272.0" prefHeight="42.0" prefWidth="287.0" promptText="Username">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Button fx:id="loginbutton" layoutX="659.0" layoutY="465.0" mnemonicParsing="false" onAction="#loginaction" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: MEDIUMPURPLE;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="650.0" prefWidth="402.0">
+         <center>
+            <ImageView fitHeight="240.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../img/planes.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Label layoutX="478.0" layoutY="180.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="signupbutton" layoutX="478.0" layoutY="549.0" mnemonicParsing="false" onAction="#signupaction" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: pink;" text="Don't have an account? SignUp!" textFill="#6f2b6f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      
+      <Line endX="35.0" layoutX="579.0" layoutY="235.0" startX="-100.0" stroke="#7932a8" strokeWidth="3.0" />
+      <CheckBox fx:id="admincheckbox" layoutX="478.0" layoutY="404.0" mnemonicParsing="false" onAction="#checkboxaction" style="-fx-background-color: WHITE;" text="ADMIN">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </CheckBox>
+      
+       <Line endX="35.0" layoutX="579.0" layoutY="400.0" startX="-100.0" stroke="#7932a8" strokeWidth="3.0" />
+      <CheckBox fx:id="employeecheckbox" layoutX="600.0" layoutY="404.0" mnemonicParsing="false" onAction="#checkboxaction" style="-fx-background-color: WHITE;" text="STAFF">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </CheckBox>
+      
+      <PasswordField fx:id="passwordtext" layoutX="478.0" layoutY="335.0" prefHeight="42.0" prefWidth="287.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

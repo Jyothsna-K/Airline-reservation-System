@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.employeeController">
+   <children>
+      <AnchorPane layoutY="88.0" prefHeight="59.0" prefWidth="850.0" style="-fx-background-color:lightgreen;">
+         <children>
+            <Button fx:id="afsbutton" layoutX="154.0" layoutY="8.0" mnemonicParsing="false" onAction="#afsaction" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: MEDIUMPURPLE;" text="ADD EMPLOYEE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="dfsbutton" layoutX="321.0" layoutY="8.0" mnemonicParsing="false" onAction="#dfsaction" prefHeight="43.0" prefWidth="180.0" style="-fx-background-color: MEDIUMPURPLE;" text="DELETE EMPLOYEE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+              <Button fx:id="efsbutton" layoutX="520.0" layoutY="8.0" mnemonicParsing="false" onAction="#efsaction" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: RED;" text="SIGN OUT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="employeeschedules" layoutX="150.0" layoutY="214.0" prefHeight="201.0" prefWidth="607.0">
+         <columns>
+            <TableColumn fx:id="employeeid" prefWidth="75.0" text="Employee ID" />
+            <TableColumn fx:id="employeefirstname" prefWidth="155.0" text="First Name" />
+            <TableColumn fx:id="employeelastname" prefWidth="110.0" text="Last Name" />
+            <TableColumn fx:id="employeeaddress" text="Address" />
+            <TableColumn fx:id="employeemail" prefWidth="106.0" text="Email" />
+               <TableColumn fx:id="employeephonenumber" prefWidth="106.0" text="Phone no" />
+         </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="172.0" text="EMPLOYEE DETAILS">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="225.0" endY="94.5" layoutX="-3.0" layoutY="105.0" startX="45.0" startY="94.5" stroke="#ab6ea6" strokeWidth="4.0" />
+      <Label layoutX="321.0" layoutY="24.0" prefHeight="43.0" prefWidth="274.0" text="SOUTHWEST AIRLINE ">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="255.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/planes.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backbutton" layoutX="50.0" layoutY="27.0" mnemonicParsing="false" onAction="#backaction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: MEDIUMPURPLE;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="41.0" layoutX="222.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/imageedit_3_2687485427.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="44.0" layoutY="431.0" text="ADD EMPLOYEE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="217.0" endY="94.5" layoutX="1.0" layoutY="363.0" startX="45.0" startY="94.5" stroke="#ab6ea6" strokeWidth="4.0" />
+      <TextField fx:id="employeefirstnametext" layoutX="45.0" layoutY="502.0" prefHeight="37.0" prefWidth="170.0" promptText="First Name" />
+      <Label layoutX="44.0" layoutY="479.0" text="First Name">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeelastnametext" layoutX="236.0" layoutY="502.0" prefHeight="37.0" prefWidth="170.0" promptText="Last Name" />
+      <Label layoutX="241.0" layoutY="479.0" text="	Last Name">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeaddresstext" layoutX="423.0" layoutY="502.0" prefHeight="37.0" prefWidth="71.0" promptText=" address" />
+      <Label layoutX="426.0" layoutY="479.0" text="Addess">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeemailtext" layoutX="45.0" layoutY="575.0" prefHeight="37.0" prefWidth="170.0" promptText="email id" />
+      <TextField fx:id="employeephonenumbertext" layoutX="236.0" layoutY="575.0" prefHeight="37.0" prefWidth="170.0" promptText="Phone no" />
+      <Label layoutX="44.0" layoutY="552.0" text="Email">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="552.0" text="Phone no">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeedpasswordtext" layoutX="521.0" layoutY="502.0" prefHeight="37.0" prefWidth="115.0" promptText="Password" />
+      <Label layoutX="521.0" layoutY="479.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+ 
+      <Button fx:id="addbutton" layoutX="569.0" layoutY="575.0" mnemonicParsing="false" onAction="#addaction" prefHeight="37.0" prefWidth="170.0" style="-fx-background-color: MEDIUMPURPLE;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="101.0" fitWidth="197.0" layoutX="648.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/ribbon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="viewschedueletable" layoutX="273.0" layoutY="168.0" mnemonicParsing="false" onAction="#viewschedueletableaction" prefHeight="24.0" prefWidth="71.0" style="-fx-background-color: MEDIUMPURPLE;" text="VIEW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
